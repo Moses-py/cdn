@@ -8,7 +8,6 @@ import {
   CTAButtonContainer,
   ArrowDirection,
 } from "../../styles/Home/hero/Hero.styles";
-import { Navbar } from "./Navbar";
 import { Wavy } from "./Wavy";
 
 export const Hero: React.FunctionComponent = () => {
