@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { fonts, palette } from "../../../helpers/customs";
+import { fonts } from "../../../helpers/customs";
 
 interface HeroStyleProps {
   viewport: number;
@@ -11,9 +11,15 @@ export const HeroWrapper = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 90vh;
   position: relative;
-  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 0;
+
+  @media (max-width: 768px) {
+    padding: 5rem 0;
+  }
 `;
 
 export const Overlay = styled.div`
@@ -27,24 +33,32 @@ export const Overlay = styled.div`
   z-index: 1;
 `;
 export const NavbarContainer = styled.div<HeroStyleProps>`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 4rem;
-  z-index: 2;
+  position: relative;
+  height: 80px;
+  margin: 0;
+`;
+
+export const NavbarWrapper = styled.div`
   position: fixed;
-  background: #fff;
   top: 0;
   left: 0;
   right: 0;
+  padding: 1.2rem 4rem;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   @media (max-width: 600px) {
     padding: 1.5rem;
   }
+  background: #fff;
 `;
-
 export const NavbarLogo = styled.img`
   width: 120px;
   object-fit: contain;
+  display: flex;
+  align-items: center;
   @media (max-width: 500px) {
     width: 100px;
   }
@@ -87,10 +101,6 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 600px) {
-    position: relative;
-    height: 60%;
-  }
 `;
 export const HeroText = styled.div`
   position: relative;
@@ -98,7 +108,6 @@ export const HeroText = styled.div`
   width: 55vw;
   text-align: center;
   color: white;
-  margin-top: 3rem;
 
   @media (max-width: 1200px) {
     width: 70vw;
@@ -115,26 +124,28 @@ export const HeroText = styled.div`
     width: 90vw;
   }
   span {
-    color: ${palette.primary};
+    color: #ffc107;
   }
   .banner-heading {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family: ${fonts.serif};
-    line-height: 1.5;
+    line-height: 1.1;
+    overflow: hidden;
 
     @media (max-width: 1200px) {
-      font-size: 5.5vw;
+      font-size: 5vw;
     }
 
     @media (max-width: 800px) {
-      font-size: 6.5vw;
+      font-size: 5.5vw;
     }
+
     @media (max-width: 600px) {
-      font-size: 7vw;
+      font-size: 6.5vw;
     }
 
     @media (max-width: 420px) {
-      font-size: 9vw;
+      font-size: 8vw;
     }
   }
 
@@ -150,18 +161,18 @@ export const HeroText = styled.div`
     }
 
     @media (max-width: 768px) {
-      font-size: 3vw;
+      font-size: 2.5vw;
     }
     @media (max-width: 600px) {
-      font-size: 3.25vw;
+      font-size: 3vw;
     }
 
     @media (max-width: 520px) {
-      font-size: 4vw;
+      font-size: 3.5vw;
     }
 
     @media (max-width: 420px) {
-      font-size: 4.5vw;
+      font-size: 4vw;
     }
   }
 `;

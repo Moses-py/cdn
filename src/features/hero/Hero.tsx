@@ -6,18 +6,13 @@ import {
   Overlay,
   HeroContainer,
   CTAButtonContainer,
-  ArrowDirection,
 } from "../../styles/Home/hero/Hero.styles";
-import { Wavy } from "./Wavy";
 
 export const Hero: React.FunctionComponent = () => {
   return (
     <>
       <HeroWrapper>
-        <Overlay>
-          <Wavy />
-        </Overlay>
-        <Wavy />
+        <Overlay />
         <HeroContainer>
           <HeroText>
             <h1 className="banner-heading">
@@ -26,16 +21,15 @@ export const Hero: React.FunctionComponent = () => {
             <p className="banner-text">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Assumenda harum delectus veniam inventore nisi id magnam, impedit
-              cupiditate, cum voluptatibus quae temporibus recusandae
-              laboriosam, quas accusantium
+              cupiditate, cum voluptatibus
             </p>
             <CTAButtonContainer>
               <Button text="OUR BUSINESSES" />
             </CTAButtonContainer>
           </HeroText>
-          <ArrowDirection />
         </HeroContainer>
       </HeroWrapper>
+      {/* <ArrowDirection /> */}
     </>
   );
 };

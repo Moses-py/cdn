@@ -12,7 +12,7 @@ export const Footer = () => {
           <div className="footer-wrapper">
             <div className="foooter-div-1">
               <img
-                src="\assets\Logo=Default.png"
+                src="\assets\Logo=yellow.png"
                 alt="brand-logo"
                 className="brand-logo"
               />

@@ -34,8 +34,16 @@ export const BusinessTemplateDescription = styled.div`
     font-size: 2rem;
     font-family: ${fonts.serif};
     margin: 0;
-    @media (max-width: 790px) {
-      font-size: 1.7rem;
+
+    @media (max-width: 990px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
+    @media (max-width: 600px) {
+      font-size: 1.3rem;
     }
   }
   p {

@@ -4,6 +4,7 @@ import useWindowSize from "../../helpers/windowDimesions";
 import {
   NavbarContainer,
   NavbarLogo,
+  NavbarWrapper,
 } from "../../styles/Home/hero/Hero.styles";
 
 export const Navbar: React.FunctionComponent = () => {
@@ -12,8 +13,10 @@ export const Navbar: React.FunctionComponent = () => {
   return (
     <>
       <NavbarContainer viewport={height as number}>
-        <NavbarLogo src="\assets\logo-black.png" alt="company-logo" />
-        <Hamburger />
+        <NavbarWrapper>
+          <NavbarLogo src="\assets\logo-black.png" alt="company-logo" />
+          <Hamburger />
+        </NavbarWrapper>
       </NavbarContainer>
     </>
   );
