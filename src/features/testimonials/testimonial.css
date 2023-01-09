@@ -4,146 +4,101 @@
   background: #fff8eb;
   padding: 5rem 1rem;
 }
-
-.outerdiv {
-  width: 100%;
-
+.testimonial-items {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  font-family: "Barlow Semi Condensed", sans-serif;
-}
-.innerdiv {
-  transform: scale(0.9);
-  margin: 1rem;
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-rows: repeat(2, 22rem);
-  grid-template-columns: repeat(4, 17rem);
-}
-.eachdiv {
-  padding: 1rem 2rem;
-  border-radius: 0.8rem;
-  box-shadow: 5px 5px 20px #6d6b6b6b;
-  color: white;
-}
-.div1 {
-  background: #0f1daa;
-  grid-column: 1/3;
-  grid-row: 1/2;
-  background-image: url(https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/bg-pattern-quotation.svg);
-  background-repeat: no-repeat;
-  background-position-x: 25rem;
-}
-.div2 {
-  background: #49556b;
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-.div3 {
-  background: white;
-  grid-column: 4/5;
-  grid-row: 1/3;
-  color: black;
-}
-.div4 {
-  background: white;
-  grid-column: 1/2;
-  grid-row: 2/3;
-  color: black;
-}
-.div5 {
-  background: #18202d;
-  grid-column: 2/4;
-  grid-row: 2/3;
-}
-.userdetails {
-  display: flex;
-}
-.imgbox {
-  margin-right: 1rem;
-}
-.imgbox img {
-  border-radius: 50%;
-  width: 2rem;
-  border: 2px solid #cec5c5;
-}
-.detbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.detbox p {
+  flex-flow: wrap;
   margin: 0;
+  overflow: hidden;
+  gap: 2rem;
 }
-.detbox .name {
-  color: hsl(0, 0%, 81%);
-  font-size: 0.9rem;
-  margin-bottom: 0.1rem;
-  font-weight: 600;
+figure.snip1157 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333;
+  text-align: left;
+  box-shadow: none !important;
 }
-.detbox .name.dark {
-  color: #49505a;
+figure.snip1157 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
 }
-.detbox .designation {
-  color: hsl(0, 0%, 81%);
-  opacity: 50%;
-  font-size: 0.8rem;
+figure.snip1157 img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 40px 0 0 10px;
 }
-.detbox .designation.dark {
-  color: #49505a;
-}
-.review h4 {
-  font-size: 1.4rem;
-  color: #f3deff;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 0.8rem;
-}
-.review.dark h4 {
-  color: #4b5258;
-}
-.review p {
-  font-size: 0.95rem;
-  color: #f3deff;
+figure.snip1157 blockquote {
+  display: block;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fafafa;
+  padding: 40px 30px 25px 30px;
+  font-size: 0.9em;
   font-weight: 500;
-  opacity: 50%;
-  line-height: 1.5;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+  overflow: hidden;
+  height: 250px;
 }
-.review.dark p {
-  color: #0e0e0e;
+figure.snip1157 blockquote:before,
+figure.snip1157 blockquote:after {
+  font-family: "FontAwesome";
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
 }
-.attribution {
-  font-size: 1rem;
-  line-height: 1.5;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  text-align: right;
+figure.snip1157 blockquote:before {
+  top: 25px;
+  left: 20px;
 }
-.attribution a {
-  text-decoration: none;
+figure.snip1157 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
 }
-@media only screen and (max-width: 1000px) {
-  .innerdiv {
-    transform: scale(0.7);
-  }
+figure.snip1157 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #333;
+  margin: 0;
+  position: absolute;
 }
-@media only screen and (max-width: 800px) {
-  .innerdiv {
-    transform: scale(0.6);
-  }
+figure.snip1157 .author {
+  position: absolute;
+  bottom: 45px;
+  padding: 0 10px 0 120px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
 }
-@media only screen and (max-width: 600px) {
-  .div1 {
-    background-position-x: 10rem;
-  }
-  .innerdiv {
-    display: flex;
-    flex-direction: column;
-    transform: scale(1);
-    margin: 0.5rem;
-    margin-bottom: 5rem;
-  }
+figure.snip1157 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+  color: #333;
+}
+figure.snip1157 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  color: #333;
+  display: inline-block;
 }

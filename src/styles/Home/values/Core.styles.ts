@@ -66,7 +66,7 @@ export const CoreCardWrapper = styled.div`
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border: 1px solid #eaeaea;
     transform: translateY(-100px);
 
     @media (max-width: 990px) {
