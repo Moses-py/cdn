@@ -1,6 +1,6 @@
 .nav-wrapper {
   position: fixed;
-  top: 8.5%;
+  top: 80px;
   /*left: -100%;*/
   right: -100%;
   height: 60%;
@@ -142,6 +142,5 @@ input[type="checkbox"] {
 @media (max-width: 500px) {
   .nav-wrapper {
     height: 100vh;
-    top: 10%;
   }
 }
