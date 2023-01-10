@@ -66,11 +66,11 @@ export const BusinessTemplateDescription = styled.div`
     }
 
     @media (max-width: 520px) {
-      font-size: 4vw;
+      font-size: 3.75vw;
     }
 
     @media (max-width: 420px) {
-      font-size: 4.5vw;
+      font-size: 4vw;
     }
   }
 `;

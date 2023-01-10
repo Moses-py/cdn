@@ -6,7 +6,7 @@ export const Hamburger: React.FunctionComponent = () => {
   const { updateDropdown, open } = useContext(AppContext);
   const style = {
     fontSize: "2.5rem",
-    color: "#111",
+    color: "#000",
   };
   return (
     <>

@@ -4,7 +4,7 @@ import { fonts } from "../../../helpers/customs";
 export const NewsletterContainer = styled.div`
   background: #fff8eb;
   width: 100%;
-  padding: 2rem;
+  padding: 5rem 0;
 `;
 
 export const NewsletterWrapper = styled.div`
