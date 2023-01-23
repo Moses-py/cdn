@@ -11,6 +11,7 @@ export const CTAButton = styled.a`
   text-align: center;
   text-decoration: none;
   color: #fff;
+  display: block;
   &:hover {
     background-color: #fff8eb;
     border: 0.5px solid #ffc107;
@@ -18,6 +19,12 @@ export const CTAButton = styled.a`
   }
   @media (max-width: 600px) {
     font-size: 0.9rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+    width: 220px;
+    padding: 0.5rem;
   }
 `;
 
@@ -39,5 +46,10 @@ export const Btn = styled.div`
   }
   @media (max-width: 600px) {
     font-size: 0.9rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+    width: 220px;
+    padding: 0.5rem;
   }
 `;

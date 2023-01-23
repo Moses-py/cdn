@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   gap: 2em;
-  padding: 2em;
+  padding: 2em 1rem;
   border-radius: calc(40) * 1px 0 0 0;
   background-color: #fff;
   transform: translateY(-100%);
@@ -97,7 +97,7 @@
 }
 
 .card__description {
-  padding: 0 2em 2em;
+  padding: 0 1rem;
   margin: 0;
   color: #0f1daa;
   display: -webkit-box;
@@ -127,7 +127,7 @@
   }
 }
 /* @media (max-width: 600px) {
-  .card__title {
-    font-size: 1.1rem;
+  .card__description {
+    padding: 0;
   }
 } */
