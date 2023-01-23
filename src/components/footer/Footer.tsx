@@ -23,7 +23,7 @@ export const Footer = () => {
               </p>
             </div>
 
-            <div className="footer-div-2">
+            <div className="footer-div-2 footer-align-right">
               <h6>Businesses</h6>
               <ul className="footer-links">
                 <li>
@@ -56,7 +56,7 @@ export const Footer = () => {
               </ul>
             </div>
 
-            <div className="footer-div-4">
+            <div className="footer-div-4 footer-align-right">
               <h6>About Us</h6>
               <ul className="footer-links">
                 <li>

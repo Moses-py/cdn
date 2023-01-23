@@ -41,12 +41,6 @@ export const Navbar: React.FunctionComponent = () => {
           </div>
         </NavbarWrapper>
       </NavbarContainer>
-
-      {/* <NavbarContainer viewport={height as number}>
-        <NavbarWrapper>
-          <NavbarLogo src="\assets\logo-black.png" alt="company-logo" />
-        </NavbarWrapper>
-      </NavbarContainer> */}
     </>
   );
 };

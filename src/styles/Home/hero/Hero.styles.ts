@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { fonts } from "../../../helpers/customs";
 
 interface HeroStyleProps {
-  viewport: number;
+  viewport?: number;
+  url?: string;
 }
 
-export const HeroWrapper = styled.div`
-  background-image: url("/assets/Aba city.jpg");
+export const HeroWrapper = styled.div<HeroStyleProps>`
+  background-image: url("${(props) => props.url}");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@ export const NavbarWrapper = styled.div`
   align-items: center;
 
   @media (max-width: 600px) {
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;
   }
   background: #fff;
 `;
@@ -128,7 +128,6 @@ export const HeroText = styled.div`
   }
   .banner-heading {
     font-size: 3.5vw;
-    font-family: ${fonts.serif};
     line-height: 1.1;
     overflow: hidden;
 
@@ -181,6 +180,8 @@ export const CTAButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: wrap;
+  gap: 2rem;
 `;
 
 export const DesignCircle = styled.div`

@@ -10,7 +10,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
-  padding: 3rem;
+  padding: 2rem;
+  justify-content: flex-end;
 }
 
 .brand-logo {
@@ -92,11 +93,18 @@
   .footer-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer-align-right {
+    text-align: right;
+  }
 }
 
 @media (max-width: 475px) {
   .footer-wrapper {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+  .footer-align-right {
+    text-align: left;
   }
 }

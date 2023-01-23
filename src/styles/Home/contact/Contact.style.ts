@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { fonts } from "../../../helpers/customs";
 
 export const ContactBannerWrapper = styled.div`
   margin: 0;
@@ -30,16 +29,16 @@ export const ContactCardContainer = styled.div`
 export const ContactCard = styled.div`
   width: 100%;
   height: 100%;
-  h1 {
-    font-family: ${fonts.serif};
-  }
+  display: flex;
+  align-items: center;
 `;
 
 export const ContactCardMeet = styled.div`
-  padding: 3.5rem 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  height: 100%;
+  line-height: 1.5;
 
   .phone,
   .mail,
@@ -54,7 +53,6 @@ export const ContactCardMessage = styled.div`
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100%;
   background: #eaeaea;
   line-height: 1.5;
@@ -69,7 +67,6 @@ export const ContactCardMessage = styled.div`
     background: transparent;
     color: #54b6bd;
     font-size: 1rem;
-    resize: none;
     &::placeholder {
       color: #54b6bd;
       font-size: 14px;

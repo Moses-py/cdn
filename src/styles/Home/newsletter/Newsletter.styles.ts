@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import { fonts } from "../../../helpers/customs";
 
 export const NewsletterContainer = styled.div`
   background: #fff8eb;
   width: 100%;
-  padding: 5rem 0;
+  padding: 2rem;
 `;
 
 export const NewsletterWrapper = styled.div`
@@ -27,8 +26,15 @@ export const NewsletterImage = styled.img`
 export const NewsletterInvite = styled.div`
   padding: 1rem;
 
+  h1 {
+    font-size: 2rem;
+
+    @media (max-width: 1200px) {
+      font-size: 1.8rem;
+    }
+  }
+
   .newsletterHeading {
-    font-family: ${fonts.serif};
     margin: 2rem 0;
   }
   .newsletterDesc {
@@ -43,10 +49,13 @@ export const NewsletterInvite = styled.div`
 
 export const NewsletterInputBox = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 
+  @media (max-width: 600px) {
+    flex-flow: wrap;
+  }
   input {
     width: 100%;
     border: none;

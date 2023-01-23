@@ -4,4 +4,5 @@ export const fonts = {
 };
 export const palette = {
   primary: "#0f1daa",
+  secondary: "#009dff",
 };

@@ -1,4 +1,3 @@
-import { fonts } from "./../../../helpers/customs";
 import styled from "styled-components";
 
 export const BusinessContainer = styled.div`
@@ -32,7 +31,6 @@ export const BusinessTemplateDescription = styled.div`
   }
   h3 {
     font-size: 2rem;
-    font-family: ${fonts.serif};
     margin: 0;
 
     @media (max-width: 990px) {
@@ -48,7 +46,6 @@ export const BusinessTemplateDescription = styled.div`
   }
   p {
     font-size: 1.2rem;
-    font-family: ${fonts.sanSerif};
     line-height: 1.5;
     @media (max-width: 1200px) {
       font-size: 1.5vw;
