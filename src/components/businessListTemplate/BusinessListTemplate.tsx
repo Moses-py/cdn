@@ -10,12 +10,12 @@ export const BusinessListTemplate = () => {
           <BusinessListTemplateItem
             image_url="\assets\estates.png"
             title="Chuks Darls Estates"
-            button={<Button text="Explore" />}
+            button={<Button text="Explore" url="cdn-estates" />}
           />
           <BusinessListTemplateItem
             image_url="\assets\home-ethanol.png"
             title="Chuks Darls Ethanols"
-            button={<Button text="Explore" />}
+            button={<Button text="Explore" url="cdn-liquor" />}
           />
           <BusinessListTemplateItem
             image_url="\assets\farm.jpg"

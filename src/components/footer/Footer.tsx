@@ -1,9 +1,5 @@
 import React from "react";
 import "./footer.css";
-// import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-// import LinkedInIcon from "@mui/icons-material/LinkedIn";
-// import InstagramIcon from "@mui/icons-material/Instagram";
 export const Footer = () => {
   return (
     <>
@@ -27,19 +23,13 @@ export const Footer = () => {
               <h6>Businesses</h6>
               <ul className="footer-links">
                 <li>
-                  <a href="http://scanfcode.com/category/c-language/">
-                    Chuks Darls Liquor
-                  </a>
+                  <a href="/cdn-liquor">Chuks Darls Liquor</a>
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/category/front-end-development/">
-                    Chuks Darls Homes
-                  </a>
+                  <a href="/cdn-estates">Chuks Darls Estates</a>
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/category/back-end-development/">
-                    Chuks Darls Farms
-                  </a>
+                  <a href="/">Chuks Darls Farms</a>
                 </li>
               </ul>
             </div>
@@ -48,10 +38,10 @@ export const Footer = () => {
               <h6>Legal</h6>
               <ul className="footer-links">
                 <li>
-                  <a href="http://scanfcode.com/about/">Terms and Conditions</a>
+                  <a href="/">Terms and Conditions</a>
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/contact/">Privacy Policy</a>
+                  <a href="/">Privacy Policy</a>
                 </li>
               </ul>
             </div>
@@ -60,24 +50,16 @@ export const Footer = () => {
               <h6>About Us</h6>
               <ul className="footer-links">
                 <li>
-                  <a href="http://scanfcode.com/category/c-language/">
-                    Our Teams
-                  </a>
+                  <a href="/cdn-about">Our Teams</a>
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/category/front-end-development/">
-                    Our Story
-                  </a>
+                  <a href="/cdn-about">Our Story</a>
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/category/back-end-development/">
-                    Careers
-                  </a>
+                  <a href="/cdn-about">Careers</a>
                 </li>
                 <li>
-                  <a href="http://scanfcode.com/category/java-programming-language/">
-                    Contact Us
-                  </a>
+                  <a href="/cdn-about">Contact Us</a>
                 </li>
               </ul>
             </div>

@@ -43,14 +43,14 @@ export const NavbarWrapper = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  padding: 1.2rem 4rem;
+  padding: 1.2rem 3rem;
   z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (max-width: 600px) {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem;
   }
   background: #fff;
 `;
