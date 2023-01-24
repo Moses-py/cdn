@@ -71,9 +71,10 @@ export const GalleryCard: React.FunctionComponent<GalleryCardProps> = ({
           <p className="realtor-title">
             Realtor: {realtor.agentName} ({realtor.cellphone})
           </p>
-          {/* <p className="realtor-name">{realtor.agentName}</p> */}
-          {/* <span>Line is open for calls between 8am-6pm on weekdays</span> */}
-          <Button text="Make Enquiry" />
+          <div className="btngrp">
+            <Button text="Make Enquiry" />
+            <Button text="Details" />
+          </div>
         </ListingRealtor>
       </ListingGalleryCardWrapper>
     </>

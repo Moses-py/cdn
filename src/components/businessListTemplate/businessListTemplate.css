@@ -126,6 +126,12 @@
     font-size: 1.2rem;
   }
 }
+
+@media (max-width: 375px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
 /* @media (max-width: 600px) {
   .card__description {
     padding: 0;

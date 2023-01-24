@@ -22,7 +22,7 @@ export const HeroTemplate: React.FunctionComponent<HeroTemplateProps> = ({
 }) => {
   return (
     <>
-      <HeroWrapper url={backgroundUrl}>
+      <HeroWrapper url={backgroundUrl} id="hero">
         <Overlay />
         <HeroContainer>
           <HeroText>

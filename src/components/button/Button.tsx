@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Btn, CTAButton } from "../../styles/Button.styles";
 
 interface ButtonProps {
@@ -9,7 +10,13 @@ interface ButtonProps {
 export const Button: React.FunctionComponent<ButtonProps> = ({ text, url }) => {
   return (
     <>
-      {url ? <CTAButton href={`/${url}`}>{text}</CTAButton> : <Btn>{text}</Btn>}
+      {url ? (
+        <CTAButton>
+          <Link to={`/${url}`}>{text}</Link>
+        </CTAButton>
+      ) : (
+        <Btn>{text}</Btn>
+      )}
     </>
   );
 };

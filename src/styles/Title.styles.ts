@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TitleWrapper = styled.div`
   margin: 5rem 2rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
 
   @media (max-width: 600px) {
     margin: 3rem 0;

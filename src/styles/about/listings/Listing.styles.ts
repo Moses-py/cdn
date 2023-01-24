@@ -107,7 +107,7 @@ export const ListingGalleryWrapper = styled.div`
   gap: 2rem;
   padding: 2rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     grid-template-columns: 1fr;
   }
 `;
@@ -204,5 +204,12 @@ export const ListingRealtor = styled.div`
     font-size: 0.7rem;
     color: #333;
     font-style: italic;
+  }
+
+  .btngrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 `;

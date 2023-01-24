@@ -3,11 +3,13 @@ import { CoreCardWrapper } from "../../../styles/Home/values/Core.styles";
 interface CoreCardProps {
   img: string;
   value: string;
+  text: string;
 }
 
 export const CoreCard: React.FunctionComponent<CoreCardProps> = ({
   img,
   value,
+  text,
 }) => {
   return (
     <>
@@ -21,10 +23,7 @@ export const CoreCard: React.FunctionComponent<CoreCardProps> = ({
           </div>
           <div className="face face2">
             <div className="content">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                cum cumque minus iste veritatis provident at.
-              </p>
+              <p>{text}</p>
             </div>
           </div>
         </div>
