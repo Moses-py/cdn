@@ -32,7 +32,7 @@ export const CTAButton = styled.div`
   }
 `;
 
-export const Btn = styled.div`
+export const Btn = styled.button`
   padding: 0.7rem 1rem;
   background-color: #ffc107;
   width: 100%;
@@ -43,6 +43,7 @@ export const Btn = styled.div`
   text-align: center;
   text-decoration: none;
   color: #fff;
+  border: none;
   &:hover {
     background-color: #fff8eb;
     border: 0.5px solid #ffc107;
@@ -52,7 +53,6 @@ export const Btn = styled.div`
     font-size: 0.9rem;
   }
   @media (max-width: 500px) {
-    font-size: 0.8rem;
     padding: 0.5rem;
   }
 `;

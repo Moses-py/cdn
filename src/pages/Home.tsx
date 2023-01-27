@@ -11,7 +11,7 @@ import { Navbar } from "../components/navbar/Navbar";
 export const Home: React.FunctionComponent = () => {
   return (
     <>
-      <Navbar />
+      <Navbar showContact={true} />
       <Hero />
       <Core />
       <Business />

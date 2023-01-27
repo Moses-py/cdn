@@ -12,14 +12,20 @@ import {
 } from "../../styles/navbar/Navbar.styles";
 import "./navbar.css";
 
-export const Navbar: React.FunctionComponent = () => {
+interface NavbarProps {
+  showContact: boolean;
+}
+
+export const Navbar: React.FunctionComponent<NavbarProps> = ({
+  showContact,
+}) => {
   const { width } = useWindowSize();
   return (
     <>
       <NavbarContainer>
         <NavbarWrapper>
           <Link to="/">
-            <NavbarLogo src="\assets\logo-black.png" alt="company-logo" />
+            <NavbarLogo src="/assets/logo-black.png" alt="company-logo" />
           </Link>
 
           {(width as number) <= 901 ? (
@@ -50,6 +56,10 @@ export const Navbar: React.FunctionComponent = () => {
                       <Link to="/cdn-liquor">Chuks Darls Ethanols</Link>
                     </li>
                     <hr />
+                    <li>
+                      <a href="/#contact">Contact</a>
+                    </li>
+                    <hr />
                   </ul>
                 </div>
               </div>
@@ -69,6 +79,11 @@ export const Navbar: React.FunctionComponent = () => {
                 <NavbarListItem>
                   <Link to="/cdn-liquor">Chuks Darls Ethanols</Link>
                 </NavbarListItem>
+                {showContact && (
+                  <NavbarListItem>
+                    <a href="#contact">Contact</a>
+                  </NavbarListItem>
+                )}
               </NavbarListWrapper>
             </NavbarListGroup>
           )}

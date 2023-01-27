@@ -10,7 +10,7 @@ export const Hero: React.FunctionComponent = () => {
             <span>Chuks Darls</span> Estates
           </>
         }
-        heroSubText="Estates in the city of Aba"
+        heroSubText="We offer affordable residential and office spaces well situated for your convenience and comfort"
         backgroundUrl="/assets/Hero - estates.png"
       />
     </>

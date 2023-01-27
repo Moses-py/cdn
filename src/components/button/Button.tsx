@@ -5,17 +5,22 @@ import { Btn, CTAButton } from "../../styles/Button.styles";
 interface ButtonProps {
   text: string;
   url?: string;
+  onClick?: () => void;
 }
 
-export const Button: React.FunctionComponent<ButtonProps> = ({ text, url }) => {
+export const Button: React.FunctionComponent<ButtonProps> = ({
+  text,
+  url,
+  onClick,
+}) => {
   return (
     <>
       {url ? (
-        <CTAButton>
+        <CTAButton onClick={onClick}>
           <Link to={`/${url}`}>{text}</Link>
         </CTAButton>
       ) : (
-        <Btn>{text}</Btn>
+        <Btn onClick={onClick}>{text}</Btn>
       )}
     </>
   );

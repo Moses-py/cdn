@@ -23,12 +23,12 @@ export const NavbarWrapper = styled.div`
   background: #fff;
 `;
 export const NavbarLogo = styled.img`
-  width: 120px;
+  width: 150px;
   object-fit: contain;
   display: flex;
   align-items: center;
   @media (max-width: 500px) {
-    width: 100px;
+    width: 120px;
   }
 `;
 export const NavbarListGroup = styled.div`
@@ -42,10 +42,10 @@ export const NavbarListWrapper = styled.ul`
   list-style-type: none;
 `;
 
-export const NavbarListItem = styled.ul`
+export const NavbarListItem = styled.li`
   color: #111;
   font-size: 1rem;
-
+  padding-left: 40px;
   a {
     text-decoration: none;
     cursor: pointer;

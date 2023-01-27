@@ -9,7 +9,7 @@ import { Listing } from "../features/estates/listings/Listing";
 export const Estate = () => {
   return (
     <>
-      <Navbar />
+      <Navbar showContact={false} />
       <Hero />
       <Works />
       <Listing />

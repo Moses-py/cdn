@@ -5,12 +5,16 @@ export const ListingContainer = styled.div`
 `;
 
 export const ListingWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  padding: 0 20%;
 
-  @media (max-width: 1200px) {
-    grid-template-columns: 1fr;
+  @media (max-width: 1250px) {
+    padding: 0 10%;
+  }
+  @media (max-width: 991px) {
+    padding: 0 1rem;
+  }
+  @media (max-width: 600px) {
+    padding: 0;
   }
 `;
 
@@ -27,9 +31,7 @@ export const OrderFormWrapperTitle = styled.h1`
   padding: 0;
 `;
 
-export const OrderFormTemplate = styled.form`
-  padding: 0 2rem;
-`;
+export const OrderFormTemplate = styled.form``;
 
 export const OrderFormImputContainer = styled.div`
   margin: 1rem 0;
@@ -105,7 +107,7 @@ export const ListingGalleryWrapper = styled.div`
   }
 
   gap: 2rem;
-  padding: 2rem;
+  padding: 1rem;
 
   @media (max-width: 720px) {
     grid-template-columns: 1fr;
@@ -211,5 +213,30 @@ export const ListingRealtor = styled.div`
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    a {
+      padding: 0.7rem 1rem;
+      background-color: #ffc107;
+      width: 100%;
+      font-size: 1rem;
+      line-height: 1.3;
+      cursor: pointer;
+      transition: all 0.33s ease;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      border: none;
+      &:hover {
+        background-color: #fff8eb;
+        border: 0.5px solid #ffc107;
+        color: #333;
+      }
+      @media (max-width: 768px) {
+        font-size: 0.9rem;
+      }
+      @media (max-width: 500px) {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+      }
+    }
   }
 `;

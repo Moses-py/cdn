@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 export const Footer = () => {
   return (
@@ -8,7 +9,7 @@ export const Footer = () => {
           <div className="footer-wrapper">
             <div className="foooter-div-1">
               <img
-                src="\assets\Logo=yellow.png"
+                src="\assets\default-logo.png"
                 alt="brand-logo"
                 className="brand-logo"
               />
@@ -23,13 +24,10 @@ export const Footer = () => {
               <h6>Businesses</h6>
               <ul className="footer-links">
                 <li>
-                  <a href="/cdn-liquor">Chuks Darls Liquor</a>
+                  <Link to="/cdn-liquor">Chuks Darls Ethanols</Link>
                 </li>
                 <li>
-                  <a href="/cdn-estates">Chuks Darls Estates</a>
-                </li>
-                <li>
-                  <a href="/">Chuks Darls Farms</a>
+                  <Link to="/cdn-estates">Chuks Darls Estates</Link>
                 </li>
               </ul>
             </div>
@@ -50,16 +48,13 @@ export const Footer = () => {
               <h6>About Us</h6>
               <ul className="footer-links">
                 <li>
-                  <a href="/cdn-about">Our Teams</a>
+                  <Link to="/cdn-about">About Usy</Link>
                 </li>
                 <li>
-                  <a href="/cdn-about">Our Story</a>
+                  <Link to="/cdn-about">Our Story</Link>
                 </li>
                 <li>
-                  <a href="/cdn-about">Careers</a>
-                </li>
-                <li>
-                  <a href="/cdn-about">Contact Us</a>
+                  <a href="/#contact">Contact Us</a>
                 </li>
               </ul>
             </div>

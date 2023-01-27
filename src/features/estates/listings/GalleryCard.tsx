@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Button } from "../../../components/button/Button";
+import { AppContext } from "../../../context/Main";
 import {
   ListingGalleryCardDetails,
   ListingGalleryCardWrapper,
@@ -7,24 +8,25 @@ import {
 } from "../../../styles/about/listings/Listing.styles";
 
 interface GalleryCardProps {
+  id: number;
   url: string;
   location: string;
   bedroomCount: string;
   bathroomCount: string;
-  price: string;
-  realtor: {
-    agentName: string;
-    cellphone: string;
-  };
 }
 export const GalleryCard: React.FunctionComponent<GalleryCardProps> = ({
   url,
   location,
   bedroomCount,
   bathroomCount,
-  price,
-  realtor,
+  id,
 }) => {
+  const { updateOpen, updatePropertyId } = useContext(AppContext);
+
+  const updateModalState = () => {
+    updatePropertyId(id);
+    updateOpen();
+  };
   return (
     <>
       <ListingGalleryCardWrapper>
@@ -34,7 +36,7 @@ export const GalleryCard: React.FunctionComponent<GalleryCardProps> = ({
 
         <ListingGalleryCardDetails>
           <p className="listing-type">Flat | Apartments • Rent | Sale</p>
-          <p className="listing-price">${price}</p>
+          {/* <p className="listing-price">${price}</p> */}
           <p className="listing-address">{location}</p>
           <div className="listing-description">
             <div className="bedroom-count">
@@ -62,23 +64,21 @@ export const GalleryCard: React.FunctionComponent<GalleryCardProps> = ({
                 ></path>
               </svg>
               <p className="count-title">
-                <span>{bathroomCount}</span> Bathroom(s)
+                <span>{bathroomCount}</span> Flats
               </p>
             </div>
           </div>
         </ListingGalleryCardDetails>
         <ListingRealtor>
           <p className="realtor-title">
-            Realtor: {realtor.agentName} ({realtor.cellphone})
+            Realtor: Chuks Darls (0808209865, 08064266970)
           </p>
           <div className="btngrp">
-            <Button text="Make Enquiry" />
-            <Button text="Details" />
+            <a href="mailto:chuksdarlsnigeria@email.com">Make Enquiry</a>
+            <Button text="Details" onClick={updateModalState} />
           </div>
         </ListingRealtor>
       </ListingGalleryCardWrapper>
     </>
   );
 };
-
-// https://images.unsplash.com/photo-1475855581690-80accde3ae2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80

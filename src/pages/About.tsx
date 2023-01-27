@@ -9,7 +9,7 @@ import { Team } from "../features/about/team/Team";
 export const About: React.FunctionComponent = () => {
   return (
     <>
-      <Navbar />
+      <Navbar showContact={false} />
       <BusinessPage />
       <Subsidiary />
       <Team />

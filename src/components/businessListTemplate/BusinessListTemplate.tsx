@@ -8,7 +8,7 @@ export const BusinessListTemplate = () => {
       <div className="business-template-wrapper">
         <ul className="cards">
           <BusinessListTemplateItem
-            image_url="\assets\estates.png"
+            image_url="\assets\listing.JPG"
             title="Chuks Darls Estates"
             button={<Button text="Explore" url="cdn-estates" />}
           />
@@ -17,11 +17,11 @@ export const BusinessListTemplate = () => {
             title="Chuks Darls Ethanols"
             button={<Button text="Explore" url="cdn-liquor" />}
           />
-          <BusinessListTemplateItem
+          {/* <BusinessListTemplateItem
             image_url="\assets\farm.jpg"
             title="Chuks Darls Farms"
             button={<Button text="Explore" />}
-          />
+          /> */}
         </ul>
       </div>
     </>

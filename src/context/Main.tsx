@@ -2,7 +2,9 @@ import React, { createContext, useState } from "react";
 
 interface ContextProps {
   open: boolean;
-  updateDropdown: () => void;
+  updateOpen: () => void;
+  updatePropertyId: (id: number) => void;
+  property_id: number;
 }
 
 type Context = {
@@ -11,18 +13,24 @@ type Context = {
 
 export const AppContext = createContext<ContextProps>({
   open: false,
-  updateDropdown: () => {},
+  updateOpen: () => {},
+  updatePropertyId: () => {},
+  property_id: 1,
 });
 
 const MainContextProvider: React.FunctionComponent<Context> = ({
   children,
 }) => {
   const [open, setOpen] = useState(false);
+  const [property_id, setPropertyId] = useState(1);
 
-  const updateDropdown = () => setOpen(!open);
+  const updateOpen = () => setOpen(!open);
+  const updatePropertyId = (id: number) => setPropertyId(id);
 
   return (
-    <AppContext.Provider value={{ open, updateDropdown }}>
+    <AppContext.Provider
+      value={{ open, updateOpen, property_id, updatePropertyId }}
+    >
       {children}
     </AppContext.Provider>
   );

@@ -11,11 +11,11 @@ export const HeroWrapper = styled.div<HeroStyleProps>`
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: 70vh;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10rem 0;
   @media (max-width: 768px) {
     height: 50vh;
   }

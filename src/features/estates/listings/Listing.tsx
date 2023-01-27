@@ -5,7 +5,6 @@ import {
   ListingWrapper,
 } from "../../../styles/about/listings/Listing.styles";
 import { ListingGallery } from "./ListingGallery";
-import { OrderForm } from "./OrderForm";
 
 export const Listing = () => {
   return (
@@ -14,7 +13,6 @@ export const Listing = () => {
         <Title heading="Listings" />
         <ListingWrapper>
           <ListingGallery />
-          <OrderForm />
         </ListingWrapper>
       </ListingContainer>
     </>

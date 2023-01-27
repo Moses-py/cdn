@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const CoreContainer = styled.div`
   margin: 2rem;
   padding: 1rem;
+  position: relative;
 `;
 export const CoreWrapper = styled.div`
   width: 100%;
@@ -12,6 +13,10 @@ export const CoreWrapper = styled.div`
   align-items: center;
   gap: 3rem;
   flex-wrap: wrap;
+  background-image: url("https://assets.codepen.io/1462889/back-page.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 export const CoreCardWrapper = styled.div`

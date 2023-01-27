@@ -1,21 +1,17 @@
 import React from "react";
-import { Button } from "../../../components/button/Button";
 import {
-  ContactBannerWrapper,
   ContactCard,
   ContactCardContainer,
   ContactCardMeet,
   ContactCardMessage,
 } from "../../../styles/Home/contact/Contact.style";
 import LocalPhoneRoundedIcon from "@mui/icons-material/LocalPhoneRounded";
-import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import BusinessRoundedIcon from "@mui/icons-material/BusinessRounded";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 export const Contact: React.FunctionComponent = () => {
   return (
     <>
-      <ContactBannerWrapper />
-      <ContactCardContainer>
+      <ContactCardContainer id="contact">
         <div className="mapouter">
           <div className="gmap_canvas">
             <iframe
@@ -34,10 +30,6 @@ export const Contact: React.FunctionComponent = () => {
               <LocalPhoneRoundedIcon />
               <p className="tel">(234)703-736-3820</p>
             </div>
-            <div className="mail">
-              <MailOutlineRoundedIcon />
-              <p className="mail">chuksdarlsnigeria@email.com</p>
-            </div>
             <div className="addressbox">
               <BusinessRoundedIcon />
               <p className="address">
@@ -54,14 +46,14 @@ export const Contact: React.FunctionComponent = () => {
         </ContactCard>
         <ContactCard>
           <ContactCardMessage>
-            <h1 className="heading">Message Us</h1>
-            <p>Hello,</p>
+            <h1 className="heading">Mail Us</h1>
             <p className="message">
-              My name is <input type="text" placeholder="Your name" /> and my
-              email is <input type="email" placeholder="Your email" /> and I
-              would like to discuss about <textarea rows={1} cols={30} />
+              Need to make enquiries or place an order?, feel free to reach out{" "}
+              <span style={{ fontWeight: "bold" }}>
+                @chuksdarlsnigeria@email.com
+              </span>
             </p>
-            <Button text="Send" />
+            <a href="mailto:chuksdarlsnigeria@email.com">Send a mail</a>
           </ContactCardMessage>
         </ContactCard>
       </ContactCardContainer>

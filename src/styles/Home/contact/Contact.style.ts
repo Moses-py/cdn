@@ -55,9 +55,34 @@ export const ContactCardMessage = styled.div`
   flex-direction: column;
   height: 100%;
   background: #eaeaea;
-  line-height: 1.5;
+  a {
+    padding: 0.7rem 1rem;
+    background-color: #ffc107;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.3;
+    cursor: pointer;
+    transition: all 0.33s ease;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    &:hover {
+      background-color: #fff8eb;
+      border: 0.5px solid #ffc107;
+      color: #333;
+    }
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+  }
   .message {
     margin: 2rem 0;
+    line-height: 2.5;
   }
   input,
   textarea {
