@@ -44,6 +44,9 @@ export const WorkWrapper = styled.div`
 export const WorkItemWrapper = styled.div`
     padding: 5rem 3rem;
     text-align: center;
+    @media (min-width: 900px) {
+    height: 320px;
+    };
     @media (max-width: 500px) {
       padding: 4rem 2rem;
     };

@@ -7,7 +7,7 @@ export const Hero: React.FunctionComponent = () => {
       <HeroTemplate
         heroText={
           <>
-            <span>Chuks Darls</span> Estates
+            <span>Estates</span>
           </>
         }
         heroSubText="We offer affordable residential and office spaces well situated for your convenience and comfort"

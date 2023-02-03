@@ -1,5 +1,19 @@
 import styled from "styled-components";
 
+export const HeroWrapper = styled.div`
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  .inner-slider {
+    .slick-list {
+      height: 70vh !important;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+`;
 export const WorkContainer = styled.div`
   position: relative;
 `;
@@ -43,6 +57,10 @@ export const WorkWrapper = styled.div`
 
 export const WorkItemWrapper = styled.div`
   padding: 2rem;
+
+  @media (min-width: 1000px) {
+    height: 320px;
+  }
   @media (max-width: 500px) {
     padding: 4rem 2rem;
   } ;
@@ -64,12 +82,9 @@ export const OrderContainer = styled.div`
 `;
 
 export const OrderGroup = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 3rem;
   margin: 0 auto;
   padding: 0 15%;
 
@@ -80,10 +95,7 @@ export const OrderGroup = styled.div`
     padding: 0 1rem;
   }
   @media (max-width: 600px) {
-    padding: 0;
-  }
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
   }
 `;
 
@@ -91,18 +103,20 @@ export const SingleOrderWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
+  width: 400px;
+  position: relative;
+  // @media (max-width: 500px) {
+  //   width: 100%;
+  // });
   img {
-      object-fit: contain;
-      width: 100%;
-    @media (max-width: 768px {
-      height: 350px;
-    })
-  };
-
-
-
+    object-fit: contain;
+    width: 100%;
+    // @media (max-width: 768px) {
+    //   height: 350px;
+    // })
+  }
 `;
+
 export const LinkGroup = styled.div`
   display: flex;
   justify-content: center;

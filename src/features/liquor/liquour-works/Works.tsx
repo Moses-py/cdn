@@ -27,7 +27,7 @@ export const Works = () => {
           />
 
           <WorkItem
-            heading="Recieve Request"
+            heading="Receive Request"
             text="We recieve and process your order, then send your order to you through our delivery agents nearest to you"
             icon={<LooksTwoIcon sx={{ fontSize: "3rem" }} />}
             itemClass="two"

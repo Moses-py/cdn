@@ -70,9 +70,7 @@ export const GalleryCard: React.FunctionComponent<GalleryCardProps> = ({
           </div>
         </ListingGalleryCardDetails>
         <ListingRealtor>
-          <p className="realtor-title">
-            Realtor: Chuks Darls (0808209865, 08064266970)
-          </p>
+          <p className="realtor-title">Realtor: Chuks Darls (+2348080209865)</p>
           <div className="btngrp">
             <a href="mailto:chuksdarlsnigeria@email.com">Make Enquiry</a>
             <Button text="Details" onClick={updateModalState} />

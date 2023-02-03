@@ -9,7 +9,7 @@ export const Footer = () => {
           <div className="footer-wrapper">
             <div className="foooter-div-1">
               <img
-                src="\assets\default-logo.png"
+                src="\assets\logo-yellow.png"
                 alt="brand-logo"
                 className="brand-logo"
               />
@@ -24,10 +24,10 @@ export const Footer = () => {
               <h6>Businesses</h6>
               <ul className="footer-links">
                 <li>
-                  <Link to="/cdn-liquor">Chuks Darls Ethanols</Link>
+                  <Link to="/cdn-liquor">Ethanols</Link>
                 </li>
                 <li>
-                  <Link to="/cdn-estates">Chuks Darls Estates</Link>
+                  <Link to="/cdn-estates">Estates</Link>
                 </li>
               </ul>
             </div>
@@ -48,10 +48,7 @@ export const Footer = () => {
               <h6>About Us</h6>
               <ul className="footer-links">
                 <li>
-                  <Link to="/cdn-about">About Usy</Link>
-                </li>
-                <li>
-                  <Link to="/cdn-about">Our Story</Link>
+                  <Link to="/cdn-about">About Us</Link>
                 </li>
                 <li>
                   <a href="/#contact">Contact Us</a>
@@ -65,7 +62,7 @@ export const Footer = () => {
           <div className="copyright-wrapper">
             <p className="copyright-text">
               Copyright &copy; 2023 All Rights Reserved by
-              <a href="/"> Chuck Darls</a>.
+              <Link to="/"> Chuks-Darls Nigeria</Link>.
             </p>
           </div>
         </div>

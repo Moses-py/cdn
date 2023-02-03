@@ -212,7 +212,7 @@ export const ListingRealtor = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     a {
       padding: 0.7rem 1rem;
       background-color: #ffc107;

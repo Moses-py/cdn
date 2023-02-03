@@ -10,18 +10,8 @@ export const Team = () => {
         <Title heading="Our Team" subHeading="Board Members" />
         <CardTemplate
           cardOne={{
-            templateImage: "/assets/about-image1.png",
-            templateDescriptionName: "Chuks Emeka",
-            templateDescriptionSubtitle:
-              "Eget est sed urna felis. In vulputate in integer feugiat eu tortor ut faucibus. Viverra amet, nulla risus nunc purus lobortis nunc consequat. Fermentum cras elit egestas turpis. Iaculis nisl sit suspendisse tortor et nunc arcu.",
-            templateDescriptionItalics: "Chief Executive Officer",
-          }}
-          cardTwo={{
-            templateImage: "/assets/about-image2.png",
-            templateDescriptionName: "Chuks Emeka",
-            templateDescriptionSubtitle:
-              "Eget est sed urna felis. In vulputate in integer feugiat eu tortor ut faucibus. Viverra amet, nulla risus nunc purus lobortis nunc consequat. Fermentum cras elit egestas turpis. Iaculis nisl sit suspendisse tortor et nunc arcu.",
-            templateDescriptionItalics: "Chief Executive Officer",
+            templateImage: "/assets/ceo.jpg",
+            templateDescriptionName: "Nwachukwu Azubuike (Founder)",
           }}
         />
       </CardContainer>

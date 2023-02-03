@@ -49,11 +49,11 @@ export const Navbar: React.FunctionComponent<NavbarProps> = ({
                     </li>
                     <hr />
                     <li>
-                      <Link to="/cdn-estates">Chuks Darls Estate</Link>
+                      <Link to="/cdn-estates">Estate</Link>
                     </li>
                     <hr />
                     <li>
-                      <Link to="/cdn-liquor">Chuks Darls Ethanols</Link>
+                      <Link to="/cdn-liquor">Ethanols</Link>
                     </li>
                     <hr />
                     <li>
@@ -74,10 +74,10 @@ export const Navbar: React.FunctionComponent<NavbarProps> = ({
                   <Link to="/cdn-about">About us</Link>
                 </NavbarListItem>
                 <NavbarListItem>
-                  <Link to="/cdn-estates">Chuks Darls Estates</Link>
+                  <Link to="/cdn-estates">Estates</Link>
                 </NavbarListItem>
                 <NavbarListItem>
-                  <Link to="/cdn-liquor">Chuks Darls Ethanols</Link>
+                  <Link to="/cdn-liquor">Ethanols</Link>
                 </NavbarListItem>
                 {showContact && (
                   <NavbarListItem>

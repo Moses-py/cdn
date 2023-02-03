@@ -2,7 +2,7 @@ export const listings = [
   {
     id: 1,
     url: "/assets/listing.JPG",
-    location: "35, Opobo rd, Aba, Abia state",
+    location: "2 Amos Close Off Ogbona Lane",
     bedroomCount: "2",
     bathroomCount: "2",
     details:
@@ -11,7 +11,7 @@ export const listings = [
   {
     id: 2,
     url: "/assets/listing1.JPG",
-    location: "2 Amos Close Off Ogbona Lane",
+    location: "35, Opobo rd, Aba, Abia state",
     bedroomCount: "3",
     bathroomCount: "6",
     details:

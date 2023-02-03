@@ -13,14 +13,14 @@ interface CardTemplateProps {
   cardOne: {
     templateImage: string;
     templateDescriptionName: string;
-    templateDescriptionSubtitle: string;
+    templateDescriptionSubtitle?: string;
     templateDescriptionItalics?: string;
     buttonUrl?: string;
   };
-  cardTwo: {
+  cardTwo?: {
     templateImage: string;
     templateDescriptionName: string;
-    templateDescriptionSubtitle: string;
+    templateDescriptionSubtitle?: string;
     templateDescriptionItalics?: string;
     buttonUrl?: string;
   };
@@ -40,7 +40,7 @@ export const CardTemplate: React.FunctionComponent<CardTemplateProps> = ({
           {/* \assets\Chuks darls ethanols.png */}
           <CardTemplateDescription>
             <h3 className="Card-name">{cardOne.templateDescriptionName}</h3>
-            {cardTwo.templateDescriptionItalics && (
+            {cardTwo && cardTwo.templateDescriptionItalics && (
               <p className="cardDescriptionItalics">
                 {cardOne.templateDescriptionItalics}
               </p>
@@ -53,50 +53,61 @@ export const CardTemplate: React.FunctionComponent<CardTemplateProps> = ({
             )}
           </CardTemplateDescription>
         </CardOne>
-
-        <CardTwo>
-          {(width as number) > 791 ? (
-            <>
-              <CardTemplateDescription>
-                <h3 className="Card-name">{cardTwo.templateDescriptionName}</h3>
-                {cardTwo.templateDescriptionItalics && (
-                  <p className="cardDescriptionItalics">
-                    {cardTwo.templateDescriptionItalics}
+        {cardTwo && (
+          <CardTwo>
+            {(width as number) > 791 ? (
+              <>
+                <CardTemplateDescription>
+                  <h3 className="Card-name">
+                    {cardTwo && cardTwo.templateDescriptionName}
+                  </h3>
+                  {cardTwo && cardTwo.templateDescriptionItalics && (
+                    <p className="cardDescriptionItalics">
+                      {cardTwo.templateDescriptionItalics}
+                    </p>
+                  )}
+                  <p className="Card-subtitle">
+                    {cardTwo && cardTwo.templateDescriptionSubtitle}
                   </p>
-                )}
-                <p className="Card-subtitle">
-                  {cardTwo.templateDescriptionSubtitle}
-                </p>
 
-                {cardTwo.buttonUrl && (
-                  <Button text="Learn more" url={cardTwo.buttonUrl} />
-                )}
-              </CardTemplateDescription>
-              <CardTemplateImage src={cardTwo.templateImage} alt="estates" />
-              {/* \assets\Chuks Darls Estates.png */}
-            </>
-          ) : (
-            <>
-              <CardTemplateImage src={cardTwo.templateImage} alt="estates" />
+                  {cardTwo && cardTwo.buttonUrl && (
+                    <Button text="Learn more" url={cardTwo.buttonUrl} />
+                  )}
+                </CardTemplateDescription>
+                <CardTemplateImage
+                  src={cardTwo && cardTwo.templateImage}
+                  alt="estates"
+                />
+                {/* \assets\Chuks Darls Estates.png */}
+              </>
+            ) : (
+              <>
+                <CardTemplateImage
+                  src={cardTwo && cardTwo.templateImage}
+                  alt="estates"
+                />
 
-              <CardTemplateDescription>
-                <h3 className="Card-name">{cardTwo.templateDescriptionName}</h3>
-                {cardTwo.templateDescriptionItalics && (
-                  <p className="cardDescriptionItalics">
-                    {cardTwo.templateDescriptionItalics}
+                <CardTemplateDescription>
+                  <h3 className="Card-name">
+                    {cardTwo && cardTwo.templateDescriptionName}
+                  </h3>
+                  {cardTwo && cardTwo.templateDescriptionItalics && (
+                    <p className="cardDescriptionItalics">
+                      {cardTwo.templateDescriptionItalics}
+                    </p>
+                  )}
+                  <p className="Card-subtitle">
+                    {cardTwo && cardTwo.templateDescriptionSubtitle}
                   </p>
-                )}
-                <p className="Card-subtitle">
-                  {cardTwo.templateDescriptionSubtitle}
-                </p>
 
-                {cardTwo.buttonUrl && (
-                  <Button text="Learn more" url={cardTwo.buttonUrl} />
-                )}
-              </CardTemplateDescription>
-            </>
-          )}
-        </CardTwo>
+                  {cardTwo && cardTwo.buttonUrl && (
+                    <Button text="Learn more" url={cardTwo.buttonUrl} />
+                  )}
+                </CardTemplateDescription>
+              </>
+            )}
+          </CardTwo>
+        )}
       </CardWrapper>
     </>
   );

@@ -7,21 +7,18 @@ export const Business: React.FunctionComponent = () => {
   return (
     <>
       <BusinessContainer>
-        <Title
-          heading="Our Businesses"
-          subHeading="All Chuks-Darls Nigerian Businesses"
-        />
+        <Title heading="Our Businesses" />
         <CardTemplate
           cardOne={{
             templateImage: "/assets/Chuks darls ethanols.png",
-            templateDescriptionName: "Chuks Darls Ethanols",
+            templateDescriptionName: "Ethanols",
             templateDescriptionSubtitle:
               "Major distributor of Ethanol in Nigeria",
             buttonUrl: "cdn-liquor",
           }}
           cardTwo={{
             templateImage: "/assets/Chuks Darls Estates.png",
-            templateDescriptionName: "Chuks Darls Estates",
+            templateDescriptionName: "Estates",
             templateDescriptionSubtitle: "Estates in the city of Aba",
             buttonUrl: "cdn-estates",
           }}

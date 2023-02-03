@@ -6,7 +6,7 @@ export const Subsidiary = () => {
   return (
     <>
       <div className="business-wrapper">
-        <Title heading="Our Businesses" subHeading="Subsidiaries" />
+        <Title heading="Our Businesses" />
         <BusinessListTemplate />
       </div>
     </>

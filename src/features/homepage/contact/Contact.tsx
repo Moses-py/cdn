@@ -28,7 +28,7 @@ export const Contact: React.FunctionComponent = () => {
             <h1 className="heading">Meet Us</h1>
             <div className="phone">
               <LocalPhoneRoundedIcon />
-              <p className="tel">(234)703-736-3820</p>
+              <p className="tel">(234)808-020-9865</p>
             </div>
             <div className="addressbox">
               <BusinessRoundedIcon />

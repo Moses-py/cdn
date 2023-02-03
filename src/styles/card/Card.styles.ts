@@ -12,6 +12,7 @@ export const CardTemplateWrapper = styled.div`
 
 export const CardTemplateImage = styled.img`
   width: 30vw;
+  // height: 300px;
   object-fit: contain;
   @media (max-width: 790px) {
     width: 60vw;
