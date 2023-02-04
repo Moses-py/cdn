@@ -56,6 +56,12 @@ export const CoreCardWrapper = styled.div`
     align-items: center;
     z-index: 1;
     transform: translateY(150px);
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
     @media (max-width: 990px) {
       transform: translateY(0);

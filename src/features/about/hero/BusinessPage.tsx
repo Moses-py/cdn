@@ -10,7 +10,7 @@ export const BusinessPage: React.FunctionComponent = () => {
             <span>Chuks Darls</span> Nigeria
           </>
         }
-        heroSubText="Chuks-Darls is a major distributor of ethanol in Aba with NAFDAC approved number. Recently it has diversified into real estate with over 5+ estates in the city of Aba."
+        heroSubText="Chuks-Darls is a major distributor of ethanol in Aba with NAFDAC approved number. Recently it has diversified into real estate with over 5 estates in the city of Aba."
         backgroundUrl="/assets/Aba city.jpg"
         buttons={[
           <Button text="ESTATES" url="cdn-estates" />,

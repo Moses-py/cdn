@@ -11,7 +11,7 @@ export const Hero: React.FunctionComponent = () => {
             Providing <span>creative solutions</span> across Nigeria
           </>
         }
-        heroSubText="Chuks-Darls is a major distributor of ethanol who recently diversified into real estate with over 5+ estates in the city of Aba."
+        heroSubText="Chuks-Darls is a major distributor of ethanol who recently diversified into real estate with over 5 estates in the city of Aba."
         backgroundUrl="/assets/Aba city.jpg"
         buttons={[<Button text="OUR BUSINESSES" url="cdn-about" />]}
       />

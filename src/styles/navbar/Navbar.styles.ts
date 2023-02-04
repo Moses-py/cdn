@@ -18,7 +18,7 @@ export const NavbarWrapper = styled.div`
   align-items: center;
 
   @media (max-width: 600px) {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
   }
   background: #fff;
 `;
