@@ -34,7 +34,7 @@ export const Order = () => {
               </div>
             </Slider>
             <LinkGroup>
-              <a href="mailto:chuksdarlsnigeria@email.com">Email us</a>
+              <a href="mailto:info@chuks-darls.com">Email us</a>
               <a href="tel:+2348080209865">Call us</a>
             </LinkGroup>
           </SingleOrderWrapper>

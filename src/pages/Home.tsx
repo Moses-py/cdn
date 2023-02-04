@@ -14,7 +14,6 @@ export const Home: React.FunctionComponent = () => {
       <Hero />
       <Core />
       <Business />
-      {/* <Testimonial /> */}
       <Contact />
       <Newsletter />
       <Footer />

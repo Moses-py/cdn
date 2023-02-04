@@ -10,7 +10,7 @@ export const Team = () => {
         <Title heading="Our Team" subHeading="Board Members" />
         <CardTemplate
           cardOne={{
-            templateImage: "/assets/ceo.jpg",
+            templateImage: "/assets/ceo-fix.jpg",
             templateDescriptionName: "Nwachukwu Azubuike (Founder)",
           }}
         />

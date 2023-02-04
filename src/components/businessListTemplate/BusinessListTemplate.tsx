@@ -17,11 +17,6 @@ export const BusinessListTemplate = () => {
             title="Ethanols"
             button={<Button text="Explore" url="cdn-liquor" />}
           />
-          {/* <BusinessListTemplateItem
-            image_url="\assets\farm.jpg"
-            title="Chuks Darls Farms"
-            button={<Button text="Explore" />}
-          /> */}
         </ul>
       </div>
     </>

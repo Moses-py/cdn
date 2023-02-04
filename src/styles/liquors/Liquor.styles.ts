@@ -105,15 +105,9 @@ export const SingleOrderWrapper = styled.div`
   gap: 1rem;
   width: 400px;
   position: relative;
-  // @media (max-width: 500px) {
-  //   width: 100%;
-  // });
   img {
     object-fit: contain;
     width: 100%;
-    // @media (max-width: 768px) {
-    //   height: 350px;
-    // })
   }
 `;
 

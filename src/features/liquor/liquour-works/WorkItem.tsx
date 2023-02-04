@@ -30,8 +30,8 @@ export const WorkItem: React.FunctionComponent<WorkItemProps> = ({
             <p>{text}</p>
           </WorkItemTextWrapper>
           <LinkGroup>
-            <a href="mailto:chuksdarlsnigeria@email.com">Email us</a>
-            <a href="tel:0808209865">Call us</a>
+            <a href="mailto:info@chuks-darls.com">Email us</a>
+            <a href="tel:+2348080209865">Call us</a>
           </LinkGroup>
         </WorkItemWrapper>
       ) : (

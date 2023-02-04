@@ -49,11 +49,9 @@ export const Contact: React.FunctionComponent = () => {
             <h1 className="heading">Mail Us</h1>
             <p className="message">
               Need to make enquiries or place an order?, feel free to reach out{" "}
-              <span style={{ fontWeight: "bold" }}>
-                @chuksdarlsnigeria@email.com
-              </span>
+              <span style={{ fontWeight: "bold" }}>info@chuks-darls.com</span>
             </p>
-            <a href="mailto:chuksdarlsnigeria@email.com">Send a mail</a>
+            <a href="mailto:info@chuks-darls.com">Send a mail</a>
           </ContactCardMessage>
         </ContactCard>
       </ContactCardContainer>

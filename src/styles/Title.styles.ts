@@ -28,24 +28,5 @@ export const TitleWrapper = styled.div`
     @media (max-width: 1200px) {
       font-size: 1.55rem;
     }
-
-    // @media (max-width: 990px) {
-    //   font-size: 2vw;
-    // }
-
-    // @media (max-width: 768px) {
-    //   font-size: 2.5vw;
-    // }
-    // @media (max-width: 600px) {
-    //   font-size: 3vw;
-    // }
-
-    // @media (max-width: 520px) {
-    //   font-size: 3.5vw;
-    // }
-
-    // @media (max-width: 420px) {
-    //   font-size: 4vw;
-    // }
   }
 `;

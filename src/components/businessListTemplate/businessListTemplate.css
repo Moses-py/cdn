@@ -132,8 +132,3 @@
     grid-template-columns: 1fr;
   }
 }
-/* @media (max-width: 600px) {
-  .card__description {
-    padding: 0;
-  }
-} */

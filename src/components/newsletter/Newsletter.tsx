@@ -12,7 +12,6 @@ export const Newsletter: React.FunctionComponent = () => {
     <>
       <NewsletterContainer>
         <NewsletterWrapper>
-          {/* <NewsletterImage src="\assets\newsletter.png" alt="newsletter" /> */}
           <NewsletterInvite>
             <h1 className="newsletterHeading">Join our Newsletter</h1>
             <p className="newsletterDesc">
