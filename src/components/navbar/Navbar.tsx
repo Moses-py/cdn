@@ -25,7 +25,7 @@ export const Navbar: React.FunctionComponent<NavbarProps> = ({
       <NavbarContainer>
         <NavbarWrapper>
           <Link to="/">
-            <NavbarLogo src="/assets/logo-black.png" alt="company-logo" />
+            <NavbarLogo src="\assets\logo_black.png" alt="company-logo" />
           </Link>
 
           {(width as number) <= 901 ? (
