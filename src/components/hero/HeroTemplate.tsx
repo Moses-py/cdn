@@ -30,7 +30,7 @@ export const HeroTemplate: React.FunctionComponent<HeroTemplateProps> = ({
             <p className="banner-text">
               {heroSubText
                 ? heroSubText
-                : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda harum delectus veniam inventore nisi id magnam, impedit cupiditate, cum voluptatibus"}
+                : "lorem ipsur dolem njfs fjsnvsnvsojvs vnsivsiov vsnfvsnfvs noshvufytnb bndobdogbid bmdogjbdbingfob jbdbnfuo otbgijfgiod dbnodgib dbgnboi"}
             </p>
             <CTAButtonContainer>{buttons}</CTAButtonContainer>
           </HeroText>
